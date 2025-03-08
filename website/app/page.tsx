@@ -8,6 +8,7 @@ import { ProjectsSection } from "@/components/projects-section"
 import { ContactSection } from "@/components/contact-section"
 import { ScrollLine } from "@/components/scroll-line"
 import { useEffect } from "react"
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export default function Home() {
   // Add a scroll-to-top button or functionality if needed
@@ -29,6 +30,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col">
+      <BackgroundBeams />
       <ScrollLine />
       <Header />
 
