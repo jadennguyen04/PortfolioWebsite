@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { MessageSquare, Mail, Linkedin, Github } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
+import { MagicCard } from "@/components/ui/magicCard"
 
 export function ContactSection() {
   return (
@@ -22,7 +23,9 @@ export function ContactSection() {
           <div className="grid gap-8 lg:grid-cols-1">
             {/* Contact Info */}
             <div className="space-y-6">
+              
               <Card className="card-shadow">
+              <MagicCard>
                 <CardHeader>
                   <CardTitle>Contact Information</CardTitle>
                 </CardHeader>
@@ -56,7 +59,9 @@ export function ContactSection() {
                     </a>
                   </div>
                 </CardContent>
+                </MagicCard>
               </Card>
+              
             </div>
           </div>
         </div>
