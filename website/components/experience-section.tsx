@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Briefcase } from "lucide-react"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "@/components/animated-section"
 import { cn } from "@/lib/utils"
@@ -11,7 +11,7 @@ import sus from "@/components/img/sus.png"
 import CN from "@/components/img/CN.png"
 
 interface Experience {
-  logo: string
+  logo: StaticImageData | string
   company: string
   role: string
   period: string
