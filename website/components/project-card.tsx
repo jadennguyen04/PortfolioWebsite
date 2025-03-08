@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, ExternalLink } from "lucide-react"
+import { MagicCard } from "@/components/ui/magicCard";
 
 export interface ProjectCardProps {
   title: string
@@ -19,6 +20,7 @@ export interface ProjectCardProps {
 
 export function ProjectCard({ title, description, image, tags, demoLink, codeLink, showCodeButton, showDemoButton, showImage  }: ProjectCardProps) {
   return (
+    
     <Card className="overflow-hidden flex flex-col h-full card-shadow group">
       {/* Project Image */}
       {showImage && (
@@ -31,7 +33,7 @@ export function ProjectCard({ title, description, image, tags, demoLink, codeLin
           />
         </div>
       )}
-
+      <MagicCard>
       <CardHeader className="pb-2">
         <CardTitle className="text-xl">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
@@ -63,6 +65,7 @@ export function ProjectCard({ title, description, image, tags, demoLink, codeLin
           </Button>
         )}
       </CardFooter>
+      </MagicCard>
     </Card>
   )
 }

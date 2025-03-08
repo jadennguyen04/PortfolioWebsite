@@ -57,6 +57,7 @@ export function HeroSection() {
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
+
               <Button variant="outline" size="lg" asChild>
                 <Link href="#" className="flex items-center gap-2">
                   <Download className="h-4 w-4" /> Resume
@@ -66,7 +67,9 @@ export function HeroSection() {
           </div>
 
           {/* Profile Image */}
+          
           <div className="mx-auto lg:mx-0 order-first lg:order-last">
+          
             <div className="relative h-[200px] w-[200px] sm:h-[240px] sm:w-[240px] rounded-full overflow-hidden ring-4 ring-primary/20 shadow-xl">
               <Image
                 src={pfp}
@@ -77,6 +80,7 @@ export function HeroSection() {
                 priority
               />
             </div>
+            
           </div>
         </div>
       </div>
