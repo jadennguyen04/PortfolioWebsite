@@ -6,6 +6,9 @@ import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { AnimatedSection } from "@/components/animated-section"
 import { cn } from "@/lib/utils"
+import gle from "@/components/img/gameloaded.jpg"
+import sus from "@/components/img/sus.png"
+import CN from "@/components/img/CN.png"
 
 interface Experience {
   logo: string
@@ -21,7 +24,7 @@ interface Experience {
 
 const workExperience: Experience[] = [
   {
-    logo: "/placeholder.svg?height=80&width=80",
+    logo: gle,
     company: "Gameloaded Entertainment",
     role: "Community Manager",
     period: "Jan 2023 - Ongoing",
@@ -31,7 +34,7 @@ const workExperience: Experience[] = [
     ],
   },
   {
-    logo: "/placeholder.svg?height=80&width=80",
+    logo: sus,
     company: "StartupStarter (SUS)",
     role: "Co-Founder",
     period: "Dec 2024 - Ongoing",
@@ -43,7 +46,7 @@ const workExperience: Experience[] = [
     },
   },
   {
-    logo: "/placeholder.svg?height=80&width=80",
+    logo: CN,
     company: "Code Network",
     role: "Event Officer",
     period: "Oct 2024 - Ongoing",
