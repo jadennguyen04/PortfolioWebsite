@@ -46,6 +46,16 @@ const workExperience: Experience[] = [
     companyUrl: "https://www.codenetwork.co/",
   },
   {
+    logo: CN,
+    company: "REME Tools",
+    role: "Security Enginner",
+    period: "Feb 2024 - Nov 2024",
+    description: ["Conducted penetration testing, identifying potential vulnerabilities and implementing solutions.",
+      "Assisted AI model training by storing data in Excel and automating training with Bash scripts."
+    ],
+    companyUrl: "https://remetools.org/",
+  },
+  {
     logo: gle,
     company: "Gameloaded Entertainment",
     role: "Community Manager",

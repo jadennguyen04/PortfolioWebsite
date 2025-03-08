@@ -12,20 +12,25 @@ export interface ProjectCardProps {
   tags: string[]
   demoLink: string
   codeLink: string
+  showCodeButton: boolean
+  showDemoButton: boolean
+  showImage: boolean
 }
 
-export function ProjectCard({ title, description, image, tags, demoLink, codeLink }: ProjectCardProps) {
+export function ProjectCard({ title, description, image, tags, demoLink, codeLink, showCodeButton, showDemoButton, showImage  }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden flex flex-col h-full card-shadow group">
       {/* Project Image */}
-      <div className="relative h-48 overflow-hidden">
-        <Image
-          src={image || "/placeholder.svg"}
-          alt={title}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-      </div>
+      {showImage && (
+        <div className="relative h-48 overflow-hidden">
+          <Image
+            src={image || "/placeholder.svg"}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        </div>
+      )}
 
       <CardHeader className="pb-2">
         <CardTitle className="text-xl">{title}</CardTitle>
@@ -43,16 +48,20 @@ export function ProjectCard({ title, description, image, tags, demoLink, codeLin
       </CardContent>
 
       <CardFooter className="flex justify-between gap-4 pt-2 mt-auto">
-        <Button variant="outline" size="sm" asChild className="w-full">
-          <Link href={codeLink} target="_blank" rel="noopener noreferrer">
-            <Github className="mr-2 h-4 w-4" /> Code
-          </Link>
-        </Button>
-        <Button size="sm" asChild className="w-full">
-          <Link href={demoLink} target="_blank" rel="noopener noreferrer">
-            <ExternalLink className="mr-2 h-4 w-4" /> Demo
-          </Link>
-        </Button>
+        {showCodeButton && (
+          <Button variant="outline" size="sm" asChild className="w-full">
+            <Link href={codeLink} target="_blank" rel="noopener noreferrer">
+              <Github className="mr-2 h-4 w-4" /> Code
+            </Link>
+          </Button>
+        )}
+        {showDemoButton && (
+          <Button size="sm" asChild className="w-full">
+            <Link href={demoLink} target="_blank" rel="noopener noreferrer">
+              <ExternalLink className="mr-2 h-4 w-4" /> Demo
+            </Link>
+          </Button>
+        )}
       </CardFooter>
     </Card>
   )

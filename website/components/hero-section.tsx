@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Github, Linkedin, Mail, Download } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import pfp from "@/components/img/pfp.png"
+import styles from "@/components/hero-section.module.css"
 
 export function HeroSection() {
   return (
@@ -19,20 +20,20 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              Hi! I'm Jaden👋
+              Hi! I'm Jaden<span className={styles.wavingHand}>👋</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg text-muted-foreground max-w-[600px]">
             Software Developer from Brisbane, Australia. 
             <br></br><br></br>
-            I love to build full-stack applications and learn new technologies.
+            I love to build full-stack applications, experimenting with new technologies and build small projects.
             </p>
 
             {/* Social links */}
             <div className="flex items-center gap-4 pt-2">
               <Link
-                href="https://github.com"
+                href="https://github.com/jadennguyen04"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -41,7 +42,7 @@ export function HeroSection() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/jadennguyen04/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -50,7 +51,7 @@ export function HeroSection() {
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link
-                href="mailto:hello@example.com"
+                href="mailto:jnguy111@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Mail className="h-5 w-5" />
