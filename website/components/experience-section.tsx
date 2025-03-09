@@ -13,6 +13,7 @@ import gle from "@/components/img/gameloaded.jpg"
 import sus from "@/components/img/sus.png"
 import CN from "@/components/img/CN.png"
 import QUT from "@/components/img/qut.jpg"
+import reme from "@/components/img/reme.png"
 
 interface Experience {
   logo: StaticImageData | string
@@ -48,7 +49,7 @@ const workExperience: Experience[] = [
     companyUrl: "https://www.codenetwork.co/",
   },
   {
-    logo: CN,
+    logo: reme,
     company: "REME Tools",
     role: "Security Enginner",
     period: "Feb 2024 - Nov 2024",

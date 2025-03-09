@@ -57,12 +57,13 @@ export function HeroSection() {
                 <Mail className="h-5 w-5" />
                 <span className="sr-only">Email</span>
               </Link>
-
+            {/*
               <Button variant="outline" size="lg" asChild>
                 <Link href="#" className="flex items-center gap-2">
                   <Download className="h-4 w-4" /> Resume
                 </Link>
               </Button>
+              */}
             </div>
           </div>
 
