@@ -6,12 +6,26 @@ import { AnimatedSection } from "@/components/animated-section"
 
 const projects = [
   {
+    title: "Portfolio Website",
+    description: "Responsive developer portfolio with dark mode and optimised performance.",
+    image: "/placeholder.svg?height=400&width=600",
+    tags: ["Typescript", "Tailwind CSS", "Next.js"],
+    demoLink: "#",
+    codeLink: "https://github.com/jadennguyen04/PortfolioWebsite",
+    showCodeButton: true,
+    showDemoButton: true,
+    showImage: false,
+  },
+  {
     title: "Startup Search Tool",
     description: "Developed an interactive map displaying company and startup information.",
     image: "/placeholder.svg?height=400&width=600",
-    tags: ["Typescript", "AWS", "MongoDB"],
+    tags: ["React", "AWS", "MongoDB"],
     demoLink: "#",
-    codeLink: "https://github.com",
+    codeLink: "https://github.com/jadennguyen04",
+    showCodeButton: false,
+    showDemoButton: false,
+    showImage: false,
   },
   {
     title: "AI Sentiment Analysis",
@@ -19,15 +33,10 @@ const projects = [
     image: "/placeholder.svg?height=400&width=600",
     tags: ["JavaScript", "PHP", "PyTorch"],
     demoLink: "#",
-    codeLink: "https://github.com",
-  },
-  {
-    title: "Portfolio Website",
-    description: "Responsive developer portfolio with dark mode and optimised performance.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "Tailwind CSS", "Next.js"],
-    demoLink: "#",
-    codeLink: "https://github.com",
+    codeLink: "https://github.com/jadennguyen04",
+    showCodeButton: false,
+    showDemoButton: false,
+    showImage: false,
   },
 ]
 

@@ -9,7 +9,7 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Jaden Nguyen. All rights reserved.</p>
           <div className="flex gap-4">
             <Link
-              href="https://github.com"
+              href="https://github.com/jadennguyen04"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -18,7 +18,7 @@ export function Footer() {
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/jadennguyen04/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -27,7 +27,7 @@ export function Footer() {
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
-              href="mailto:hello@example.com"
+              href="mailto:jnguy111@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail className="h-5 w-5" />

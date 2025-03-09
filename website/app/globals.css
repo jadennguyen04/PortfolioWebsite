@@ -33,6 +33,8 @@
     --ring: 221.2 83.2% 53.3%;
 
     --radius: 0.5rem;
+
+    --section-background-light: rgba(255, 255, 255, 0.411);
   }
 
   .dark {
@@ -63,6 +65,9 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
+
+    --section-background-dark: rgba(34, 34, 34, 0.144);
+    
   }
 }
 
@@ -83,6 +88,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    /*
     background: linear-gradient(
       45deg,
       rgba(59, 130, 246, 0.1),
@@ -90,6 +96,7 @@
       rgba(239, 68, 68, 0.1),
       rgba(16, 185, 129, 0.1)
     );
+    */
     background-size: 400% 400%;
     z-index: -1;
     animation: gradientAnimation 15s ease infinite;
@@ -121,8 +128,13 @@ html {
 
 /* Section styling */
 .section {
-  @apply py-8 md:py-10 bg-background;
+  @apply py-8 md:py-10;
+  background: var(--section-background-light); /* Use light mode background by default */
   position: relative;
+}
+
+.dark .section {
+  background: var(--section-background-dark); /* Use dark mode background when in dark mode */
 }
 
 /* Scroll line styles */
@@ -138,7 +150,7 @@ html {
 
 .scroll-line {
   width: 100%;
-  background-color: hsl(var(--primary));
+  background: linear-gradient(to bottom, #6FD6FF, #a2e769);
   height: 0;
   transition: height 0.2s ease;
   position: relative;
@@ -152,9 +164,9 @@ html {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: hsl(var(--primary));
+  background-color: #ffffff00;
   transform: translateY(-50%);
-  box-shadow: 0 0 10px rgba(var(--primary), 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .scrolling-up {
@@ -222,6 +234,11 @@ html {
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
+.card-no-hover {
+  @apply bg-card text-card-foreground shadow-md;
+  /* No hover effect */
+}
+
 /* Navigation animations */
 @keyframes navLinkFade {
   from {
@@ -238,3 +255,23 @@ html {
   animation: navLinkFade 0.5s ease forwards;
 }
 
+footer {
+  z-index: 10; /* Adjust the value as needed */
+  position: relative;
+}
+
+@keyframes rotatingGlow {
+  0% {
+    box-shadow: 0 0 15px 5px #6FD6FF;
+  }
+  50% {
+    box-shadow: 0 0 15px 5px #a2e769;
+  }
+  100% {
+    box-shadow: 0 0 15px 5px #6FD6FF;
+  }
+}
+
+.glow-effect {
+  animation: rotatingGlow 3s infinite;
+}

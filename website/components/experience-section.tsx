@@ -2,17 +2,26 @@
 
 import { useState } from "react"
 import { Briefcase } from "lucide-react"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
+import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
+import { Card } from "@/components/ui/card"
+import { MagicCard } from "@/components/ui/magicCard"
 import { AnimatedSection } from "@/components/animated-section"
 import { cn } from "@/lib/utils"
+import gle from "@/components/img/gameloaded.jpg"
+import sus from "@/components/img/sus.png"
+import CN from "@/components/img/CN.png"
+import QUT from "@/components/img/qut.jpg"
+import reme from "@/components/img/reme.png"
 
 interface Experience {
-  logo: string
+  logo: StaticImageData | string
   company: string
   role: string
   period: string
   description: string[]
+  companyUrl?: string
   projectLink?: {
     name: string
     url: string
@@ -21,44 +30,62 @@ interface Experience {
 
 const workExperience: Experience[] = [
   {
-    logo: "/placeholder.svg?height=80&width=80",
+    logo: sus,
+    company: "StartupStarter (SUS)",
+    role: "Co-Founder",
+    period: "Dec 2024 - Ongoing",
+    description: ["Developed an interactive map-based platform for searching startups and companies, identifying key players, market gaps and investment trends.",
+    ],
+    companyUrl: "#",
+  },
+  {
+    logo: CN,
+    company: "Code Network",
+    role: "Event Officer",
+    period: "Oct 2024 - Ongoing",
+    description: ["Improved website UI/UX design for the website by using HTML, CSS and Tailwind CSS.",
+      "Optimised weekly club events, ensuring real-time issue resolution for 80+ attendees."
+    ],
+    companyUrl: "https://www.codenetwork.co/",
+  },
+  {
+    logo: reme,
+    company: "REME Tools",
+    role: "Security Enginner",
+    period: "Feb 2024 - Nov 2024",
+    description: ["Conducted penetration testing, identifying potential vulnerabilities and implementing solutions.",
+      "Assisted AI model training by storing data in Excel and automating training with Bash scripts."
+    ],
+    companyUrl: "https://remetools.org/",
+  },
+  {
+    logo: gle,
     company: "Gameloaded Entertainment",
     role: "Community Manager",
     period: "Jan 2023 - Ongoing",
     description: [
-      "Developed a Discord bot for automated announcements, moderation, and user engagement tracking by using Python, Discord API and Firebase.",
-      "Achieved 300% growth in game traffic by producing engaging YouTube videos, achieving 200K+ views and driving revenue growth.",
+      "Developed a Discord bot in Python using discord.py and Firebase, using the official API and integrated the database.",
+      "Created YouTube content, generating 200K+ views and increased user engagement and player growth.",
     ],
-  },
-  {
-    logo: "/placeholder.svg?height=80&width=80",
-    company: "StartupStarter (SUS)",
-    role: "Co-Founder",
-    period: "Dec 2024 - Ongoing",
-    description: [
-    ],
+    companyUrl: "https://www.gameloaded.net/",
+    /*
     projectLink: {
       name: "Test",
       url: "#",
     },
+    */
   },
-  {
-    logo: "/placeholder.svg?height=80&width=80",
-    company: "Code Network",
-    role: "Event Officer",
-    period: "Oct 2024 - Ongoing",
-    description: [
-    ],
-  },
+
 ]
 
 const educationExperience: Experience[] = [
   {
-    logo: "/placeholder.svg?height=80&width=80",
+    logo: QUT,
     company: "Queensland University of Technology (QUT)",
     role: "Bachelor of Information Technology (Computer Science)",
     period: "Expected Graduation: June 2025",
-    description: ["Algorithms and Data Structures, Software Development, Programming Principles, Parallel Computing, IT Project Management, Networks, Cybersecurity, Discrete Structures, Database Management"],
+    description: ["QUT Executive Deans' Commendation for Academic Excellence awarded in Semester 2, 2024.",],
+    companyUrl: "https://www.qut.edu.au/",
   },
 ]
 
@@ -100,18 +127,21 @@ export function ExperienceSection() {
           </div>
 
           {/* Experience Timeline */}
-          <div className="space-y-8">
+        <MagicCard className="card-no-hover rounded-xl bg-card">
+          <div className="space-y-8 p-6">
             {(activeTab === "work" ? workExperience : educationExperience).map((exp, index) => (
               <div key={index} className="flex gap-4">
                 {/* Company Logo */}
                 <div className="flex-shrink-0">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden">
-                    <Image
-                      src={exp.logo || "/placeholder.svg"}
-                      alt={`${exp.company} logo`}
-                      fill
-                      className="object-cover"
-                    />
+                  <Link href={exp.companyUrl || "#"} target="_blank" rel="noopener noreferrer">
+                      <Image
+                        src={exp.logo || "/placeholder.svg"}
+                        alt={`${exp.company} logo`}
+                        fill
+                        className="object-cover"
+                      />
+                  </Link>
                   </div>
                 </div>
 
@@ -131,7 +161,7 @@ export function ExperienceSection() {
                       </Badge>
                     )}
                   </div>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                  <ul className="list-disc list-inside space-y-1 text-s text-muted-foreground">
                     {exp.description.map((desc, i) => (
                       <li key={i}>{desc}</li>
                     ))}
@@ -140,6 +170,7 @@ export function ExperienceSection() {
               </div>
             ))}
           </div>
+          </MagicCard>
         </div>
       </div>
     </AnimatedSection>

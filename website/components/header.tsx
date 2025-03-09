@@ -37,7 +37,7 @@ export function Header() {
       }
 
       // Determine active section based on scroll position
-      const sections = ["about", "projects", "experience", "contact"]
+      const sections = [ "projects", "experience", "contact"]
 
       for (const section of sections) {
         const element = document.getElementById(section)
