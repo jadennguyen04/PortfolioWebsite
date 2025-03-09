@@ -19,8 +19,6 @@ export function ContactSection() {
             </p>
           </div>
 
-          {/* Contact Grid */}
-          <div className="grid gap-8 lg:grid-cols-1">
             {/* Contact Info */}
             <div className="space-y-6">
               
@@ -65,7 +63,7 @@ export function ContactSection() {
             </div>
           </div>
         </div>
-      </div>
+        
     </AnimatedSection>
   )
 }
