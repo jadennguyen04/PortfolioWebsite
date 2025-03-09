@@ -5,6 +5,8 @@ import { Briefcase } from "lucide-react"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
+import { Card } from "@/components/ui/card"
+import { MagicCard } from "@/components/ui/magicCard"
 import { AnimatedSection } from "@/components/animated-section"
 import { cn } from "@/lib/utils"
 import gle from "@/components/img/gameloaded.jpg"
@@ -124,7 +126,9 @@ export function ExperienceSection() {
           </div>
 
           {/* Experience Timeline */}
-          <div className="space-y-8">
+        <Card className="card-no-hover">
+        <MagicCard className="card-no-hover rounded-xl border bg-card text-card-foreground shadow">
+          <div className="space-y-8 p-6 rounded-lg shadow-lg">
             {(activeTab === "work" ? workExperience : educationExperience).map((exp, index) => (
               <div key={index} className="flex gap-4">
                 {/* Company Logo */}
@@ -166,6 +170,8 @@ export function ExperienceSection() {
               </div>
             ))}
           </div>
+          </MagicCard>
+          </Card>
         </div>
       </div>
     </AnimatedSection>

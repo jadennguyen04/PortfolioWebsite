@@ -34,7 +34,7 @@
 
     --radius: 0.5rem;
 
-    --section-background-light: rgba(255, 255, 255, 0.568);
+    --section-background-light: rgba(255, 255, 255, 0.411);
   }
 
   .dark {
@@ -66,7 +66,7 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
 
-    --section-background-dark: rgba(34, 34, 34, 0.322);
+    --section-background-dark: rgba(34, 34, 34, 0.199);
     
   }
 }
@@ -232,6 +232,11 @@ html {
 .card-shadow:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.card-no-hover {
+  @apply bg-card text-card-foreground shadow-md;
+  /* No hover effect */
 }
 
 /* Navigation animations */

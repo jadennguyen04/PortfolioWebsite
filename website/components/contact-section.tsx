@@ -15,7 +15,7 @@ export function ContactSection() {
               Contact
             </h2>
             <p className="text-muted-foreground mt-1">
-            Feel free to reach out! Whether it's a question, idea or just to say hello, I love to connect and explore how we can collaborate! (I promise I don't bite)
+            Feel free to reach out! Whether it's a question, idea or just to say hello, I love to connect and explore how we can collaborate!
             </p>
           </div>
 
