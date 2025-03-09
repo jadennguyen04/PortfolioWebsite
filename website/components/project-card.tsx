@@ -20,8 +20,7 @@ export interface ProjectCardProps {
 
 export function ProjectCard({ title, description, image, tags, demoLink, codeLink, showCodeButton, showDemoButton, showImage  }: ProjectCardProps) {
   return (
-    
-    <Card className="overflow-hidden flex flex-col h-full card-shadow group">
+    <MagicCard className="overflow-hidden flex flex-col h-full card-shadow group rounded-xl bg-card">
       {/* Project Image */}
       {showImage && (
         <div className="relative h-48 overflow-hidden">
@@ -33,7 +32,7 @@ export function ProjectCard({ title, description, image, tags, demoLink, codeLin
           />
         </div>
       )}
-      <MagicCard>
+      
       <CardHeader className="pb-2">
         <CardTitle className="text-xl">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
@@ -65,8 +64,8 @@ export function ProjectCard({ title, description, image, tags, demoLink, codeLin
           </Button>
         )}
       </CardFooter>
-      </MagicCard>
-    </Card>
+
+    </MagicCard>
   )
 }
 

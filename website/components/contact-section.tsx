@@ -21,9 +21,7 @@ export function ContactSection() {
 
             {/* Contact Info */}
             <div className="space-y-6">
-              
-              <Card className="card-shadow">
-              <MagicCard>
+              <MagicCard className="card-shadow rounded-xl bg-card">
                 <CardHeader>
                   <CardTitle>Contact Information</CardTitle>
                 </CardHeader>
@@ -58,7 +56,6 @@ export function ContactSection() {
                   </div>
                 </CardContent>
                 </MagicCard>
-              </Card>
               
             </div>
           </div>

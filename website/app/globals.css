@@ -260,3 +260,18 @@ footer {
   position: relative;
 }
 
+@keyframes rotatingGlow {
+  0% {
+    box-shadow: 0 0 15px 5px #6FD6FF;
+  }
+  50% {
+    box-shadow: 0 0 15px 5px #a2e769;
+  }
+  100% {
+    box-shadow: 0 0 15px 5px #6FD6FF;
+  }
+}
+
+.glow-effect {
+  animation: rotatingGlow 3s infinite;
+}

@@ -126,9 +126,8 @@ export function ExperienceSection() {
           </div>
 
           {/* Experience Timeline */}
-        <Card className="card-no-hover">
-        <MagicCard className="card-no-hover rounded-xl border bg-card text-card-foreground shadow">
-          <div className="space-y-8 p-6 rounded-lg shadow-lg">
+        <MagicCard className="card-no-hover rounded-xl bg-card">
+          <div className="space-y-8 p-6">
             {(activeTab === "work" ? workExperience : educationExperience).map((exp, index) => (
               <div key={index} className="flex gap-4">
                 {/* Company Logo */}
@@ -171,7 +170,6 @@ export function ExperienceSection() {
             ))}
           </div>
           </MagicCard>
-          </Card>
         </div>
       </div>
     </AnimatedSection>

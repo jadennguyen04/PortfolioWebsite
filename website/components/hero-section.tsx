@@ -67,10 +67,9 @@ export function HeroSection() {
           </div>
 
           {/* Profile Image */}
-          
           <div className="mx-auto lg:mx-0 order-first lg:order-last">
           
-            <div className="relative h-[200px] w-[200px] sm:h-[240px] sm:w-[240px] rounded-full overflow-hidden ring-4 ring-primary/20 shadow-xl">
+            <div className="relative h-[200px] w-[200px] sm:h-[240px] sm:w-[240px] rounded-full overflow-hidden  shadow-xl glow-effect">
               <Image
                 src={pfp}
                 alt="Developer portrait"
