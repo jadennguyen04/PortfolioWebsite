@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Moon, Sun, Menu, User, Code, Briefcase, MessageSquare } from "lucide-react"
+import { Moon, Sun, Menu, Code, Briefcase, MessageSquare } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export function Header() {

@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { MessageSquare, Mail, Linkedin, Github } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import { MagicCard } from "@/components/ui/magicCard"
@@ -15,7 +15,7 @@ export function ContactSection() {
               Contact
             </h2>
             <p className="text-muted-foreground mt-1">
-            Feel free to reach out! Whether it's a question, idea or just to say hello, I love to connect and explore how we can collaborate!
+              Feel free to reach out! Whether it&apos;s a question, idea or just to say hello, I love to connect and explore how we can collaborate!
             </p>
           </div>
 

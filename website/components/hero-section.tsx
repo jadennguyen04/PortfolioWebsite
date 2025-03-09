@@ -1,7 +1,8 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail, Download } from "lucide-react"
+//import { Button } from "@/components/ui/button"
+import { Github, Linkedin, Mail } from "lucide-react"
+//import { Download } from "lucide-react"
 import { AnimatedSection } from "@/components/animated-section"
 import pfp from "@/components/img/pfp.png"
 import styles from "@/components/hero-section.module.css"
@@ -20,7 +21,7 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              Hi! I'm Jaden<span className={styles.wavingHand}>👋</span>
+              Hi! I&apos;m Jaden<span className={styles.wavingHand}>👋</span>
             </h1>
 
             {/* Subheadline */}
