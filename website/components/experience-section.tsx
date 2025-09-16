@@ -13,6 +13,7 @@ import sus from "@/components/img/sus.png"
 import CN from "@/components/img/CN.png"
 import QUT from "@/components/img/qut.jpg"
 import reme from "@/components/img/reme.png"
+import aichi from "@/components/img/aichi.png"
 
 interface Experience {
   logo: StaticImageData | string
@@ -29,23 +30,21 @@ interface Experience {
 
 const workExperience: Experience[] = [
   {
-    logo: sus,
-    company: "StartupStarter (SUS)",
-    role: "Co-Founder",
-    period: "Dec 2024 - Ongoing",
-    description: ["Developed an interactive map-based platform for searching startups and companies, identifying key players, market gaps and investment trends.",
+    logo: gle,
+    company: "Gameloaded Entertainment",
+    role: "Community Manager",
+    period: "Jan 2023 - Ongoing",
+    description: [
+      "Built a Discord bot using JavaScript, Node.js and discord.js API for automated announcements and moderation.",
+      "Created YouTube content, generating 200K+ views and increased user engagement and player growth.",
     ],
-    companyUrl: "#",
-  },
-  {
-    logo: CN,
-    company: "Code Network",
-    role: "Event Officer",
-    period: "Oct 2024 - Ongoing",
-    description: ["Improved website UI/UX design for the website by using HTML, CSS and Tailwind CSS.",
-      "Optimised weekly club events, ensuring real-time issue resolution for 80+ attendees."
-    ],
-    companyUrl: "https://www.codenetwork.co/",
+    companyUrl: "https://www.gameloaded.net/",
+    /*
+    projectLink: {
+      name: "Test",
+      url: "#",
+    },
+    */
   },
   {
     logo: reme,
@@ -58,22 +57,37 @@ const workExperience: Experience[] = [
     companyUrl: "https://remetools.org/",
   },
   {
-    logo: gle,
-    company: "Gameloaded Entertainment",
-    role: "Community Manager",
-    period: "Jan 2023 - Ongoing",
-    description: [
-      "Developed a Discord bot in Python using discord.py and Firebase, using the official API and integrated the database.",
-      "Created YouTube content, generating 200K+ views and increased user engagement and player growth.",
+    logo: CN,
+    company: "Code Network",
+    role: "Event Officer",
+    period: "Oct 2024 - Ongoing",
+    description: ["Improved website UI/UX design for the website by using HTML, CSS and Astro.",
+      "Optimised weekly club events, ensuring real-time issue resolution for 80+ attendees."
     ],
-    companyUrl: "https://www.gameloaded.net/",
-    /*
-    projectLink: {
-      name: "Test",
-      url: "#",
-    },
-    */
+    companyUrl: "https://www.codenetwork.co/",
   },
+  {
+    logo: sus,
+    company: "StartupStarter",
+    role: "Co-Founder",
+    period: "Dec 2024 - April 2025",
+    description: ["Collaborated in a team of four to develop a full-stack platform using OpenAI API to evaluate startup ideas and generate actionable plans.", "Built APIs and designed secure systems to deliver real-time and user-friendly AI insights."
+
+    ],
+    companyUrl: "#",
+  },
+  {
+    logo: aichi,
+    company: "Aichi AI",
+    role: "Co-Founder",
+    period: "April 2025 - September 2025",
+    description: ["Collaborated in a team of three to develop a desktop AI chatbot with on-screen context awareness and Google Calendar integration.", "Attended UQ Ventures Validate program."
+
+    ],
+    companyUrl: "#",
+  },
+  
+  
 
 ]
 
@@ -82,8 +96,8 @@ const educationExperience: Experience[] = [
     logo: QUT,
     company: "Queensland University of Technology (QUT)",
     role: "Bachelor of Information Technology (Computer Science)",
-    period: "Expected Graduation: June 2025",
-    description: ["QUT Executive Deans' Commendation for Academic Excellence awarded in Semester 2, 2024.",],
+    period: "Graduated: August 2025",
+    description: ["QUT Executive Deans' Commendation for Academic Excellence awarded in Semester 2, 2024.","QUT Executive Deans' Commendation for Academic Excellence awarded in Semester 1, 2025."],
     companyUrl: "https://www.qut.edu.au/",
   },
 ]

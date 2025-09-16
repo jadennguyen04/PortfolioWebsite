@@ -21,14 +21,14 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              Hi! I&apos;m Jaden<span className={styles.wavingHand}>👋</span>
+              Hello! I&apos;m Jaden<span className={styles.wavingHand}>👋</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg text-muted-foreground max-w-[600px]">
-            Software Developer from Brisbane, Australia. 
+            Software Engineer from Brisbane, Australia. 
             <br></br><br></br>
-            I love to build full-stack applications, experimenting with new technologies and build small projects.
+            I love bringing ideas to life through full-stack applications, exploring new technologies and creating projects I am passionate about.
             </p>
 
             {/* Social links */}
