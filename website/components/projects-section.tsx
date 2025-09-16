@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: "Parallelisation of Promoter Prediction Tool",
-    description: "CParallelized an existing bioinformatics tool to speed up promoter prediction in bacterial genomes.",
+    description: "Parallelised an existing bioinformatics tool to speed up promoter prediction in bacterial genomes.",
     image: "/placeholder.svg?height=400&width=600",
     tags: ["C++", "Java", "Parallel Computing"],
     demoLink: "#",
