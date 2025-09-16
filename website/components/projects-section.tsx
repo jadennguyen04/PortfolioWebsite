@@ -62,7 +62,7 @@ const projects = [
   },
   {
     title: "Road Repair Reporting App",
-    description: "Built an iOS app to report road repairs, replacing the manual government website process.",
+    description: "Built a mobile app to report road repairs, replacing the manual government website process.",
     image: "/placeholder.svg?height=400&width=600",
     tags: ["Java", "Android", "SQL"],
     demoLink: "#",
