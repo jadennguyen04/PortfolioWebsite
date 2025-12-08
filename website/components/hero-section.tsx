@@ -28,8 +28,10 @@ export function HeroSection() {
             <p className="text-lg text-muted-foreground max-w-[600px]">
             Software Engineer from Brisbane, Australia. 
             <br></br><br></br>
-            I love bringing ideas to life through full-stack applications, exploring new technologies and creating projects I am passionate about.
+            I love bringing ideas to life through full-stack applications, using creativity and technical skills to transform concepts into real solutions. Curiosity, learning and innovation keep me moving forward.
             </p>
+
+            
 
             {/* Social links */}
             <div className="flex items-center gap-4 pt-2">

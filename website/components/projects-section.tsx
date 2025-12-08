@@ -6,6 +6,39 @@ import { AnimatedSection } from "@/components/animated-section"
 
 const projects = [
   {
+     title: "Car Dealership Website",
+     description: "A frontend-only car dealership website where users can browse cars for sale.",
+     image: "/placeholder.svg?height=400&width=600",
+     tags: ["HTML", "CSS", "TypeScript", "React"],
+     demoLink: "https://car-dealership-website-mu.vercel.app/",
+     codeLink: "https://github.com/jadennguyen04/car-dealership-website",
+     showCodeButton: true,
+     showDemoButton: true,
+     showImage: false,
+  },
+  {
+     title: "CodeNetwork Prototype Website",
+     description: "A frontend project for a university club at QUT. This website was not completed.",
+     image: "/placeholder.svg?height=400&width=600",
+     tags: ["HTML", "CSS", "TypeScript", "React"],
+     demoLink: "https://codenetwork-website.vercel.app/",
+     codeLink: "https://github.com/jadennguyen04/codenetwork-website",
+    showCodeButton: true,
+    showDemoButton: true,
+    showImage: false,
+  },
+  {
+    title: "Portfolio Website",
+    description: "Responsive developer portfolio with dark mode and optimised performance.",
+    image: "/placeholder.svg?height=400&width=600",
+    tags: ["Typescript", "Tailwind CSS", "Next.js"],
+    demoLink: "#",
+    codeLink: "https://github.com/jadennguyen04/PortfolioWebsite",
+    showCodeButton: true,
+    showDemoButton: true,
+    showImage: false,
+  },
+  {
     title: "Vet Blockchain System",
     description: "Developed a blockchain-based dApp for veterinary health records with secure MetaMask integration.",
     image: "/placeholder.svg?height=400&width=600",
@@ -49,17 +82,7 @@ const projects = [
     showDemoButton: false,
     showImage: false,
   },
-  {
-    title: "Portfolio Website",
-    description: "Responsive developer portfolio with dark mode and optimised performance.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Typescript", "Tailwind CSS", "Next.js"],
-    demoLink: "#",
-    codeLink: "https://github.com/jadennguyen04/PortfolioWebsite",
-    showCodeButton: true,
-    showDemoButton: true,
-    showImage: false,
-  },
+  
   {
     title: "Road Repair Reporting App",
     description: "Built a mobile app to report road repairs, replacing the manual government website process.",
